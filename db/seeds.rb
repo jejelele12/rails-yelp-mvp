@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+5.times do |i|
+  restaurant = Restaurant.create!(
+    name: Faker::Cannabis.strain,
+    address: Faker::Address.street_address,
+    phone_number: Faker::PhoneNumber.phone_number,
+    category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+
+  )
+  puts "well done jeje"
+end
